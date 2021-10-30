@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  transition: all 0.5s ease;
+}
+
+.container:hover {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.container img {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.price {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: orangered;
+}
+
+.quantity {
+  padding: 3px 15px;
+  margin: 20px;
+  background-color: paleturquoise;
+  border-radius: 5px;
+}
+
+.btnContainer {
+  margin: 0px 20px;
+}
+
+.btn {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0px 3px;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  color: #fff;
+}
+
+.btn_remove {
+  background-color: red;
+}
+
+.btn_increase {
+  width: 30px;
+  background-color: royalblue;
+}
+
+.btn_decrease {
+  width: 30px;
+  background-color: red;
+}
+
+@media (max-width: 550px) {
+  .container {
+    flex-direction: column;
+    min-width: 300px;
+  }
+  .btnContainer{
+    margin: 20px;
+  }
+}

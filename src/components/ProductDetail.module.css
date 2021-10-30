@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.container img {
+  width: 450px;
+  height: 450px;
+  margin: 0px 20px;
+}
+
+.detailcontainer {
+  width: 50%;
+  margin: 0px 20px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  transition: all 0.5s ease;
+}
+
+.detailcontainer:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.detailcontainer h2 {
+  color: blue;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  text-decoration: none;
+}
+
+.price {
+  padding: 5px;
+  margin: 0px;
+  border-radius: 5px;
+  background-color: orangered;
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container img {
+    width: 250px;
+    height: 250px;
+    margin: 20px 0px;
+  }
+
+  .detailcontainer {
+    width: 70%;
+    margin: 20px 0px;
+  }
+}
