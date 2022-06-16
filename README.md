@@ -1,8 +1,6 @@
 # Site Shop
 this is site which created with react 
 
-# Site link 
-https://mngh-27.github.io/products
 
 # Image
 1)
